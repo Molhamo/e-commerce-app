@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-    PATH = "C:\Users\User\anaconda3;$PATH"
+    PATH = "C:/Users/User/anaconda3;$PATH"
     }
     stages {
         stage('Build') {
