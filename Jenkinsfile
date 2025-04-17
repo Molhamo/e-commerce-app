@@ -1,12 +1,9 @@
 pipeline {
     agent any
-    environment {
-    PATH = "C:/Users/User/anaconda3;$PATH"
-    }
     stages {
         stage('Build') {
             steps {
-                sh 'python -m venv venv'
+                sh 'python3 -m venv venv'
                 sh '. venv/bin/activate && pip install -r requirements.txt'
             }
         }
